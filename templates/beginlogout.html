@@ -1,0 +1,53 @@
+<html>
+    <header>
+        <title> Begin Logout</title>
+    </header>
+    <body style="background-image: url('../image/VCS.jpg'); background-size:50%; background-repeat: no-repeat; background-position: center top;">
+        <h2 class="dot" style="text-align: center; margin-top: 30%; font-family: 'Times New Roman',serif; font-weight: bold; font-style: italic; font-size: 25px;"> Cảm ơn bạn đã sử dụng dịch vụ ChatGPT của chúng tôi</h2>
+        <style>
+            .dot {
+  font-size: 20px;
+  animation: dot 1s infinite;
+  color: black;
+}
+        </style>
+        <script>
+            setTimeout(function() {
+            window.location.href = "/logout";
+            }, 3000);
+        </script>
+</body>
+</html> 
+<style>
+    .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.dot {
+  animation: loading 1.5s infinite;
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+</style>  

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Đăng nhập</title>
+    <style>
+      /* Canh giữa nội dung trang */
+      html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      /* Thêm hình nền cho trang */
+      body {
+        background-image: url('https://cdn01.dienmaycholon.vn/filewebdmclnew/public/userupload/files/news/di-dong/1-chat-gpt-la-gi-thong-tin-gioi-thieu-ve-cach-thuc-hoat-dong-cua-chat-gpt.jpg');
+        background-size: cover;
+      }
+      
+      /* CSS cho form đăng nhập */
+      form {
+        background-color: aqua;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        width: 300px;
+      }
+      
+      /* CSS cho các input và nút đăng nhập */
+      input[type="text"],
+      input[type="password"],
+      input[type="submit"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      /* CSS cho nút quên mật khẩu */
+      .forgot-password {
+        text-align: center;
+        margin-top: 10px;
+      }
+      
+      .forgot-password a {
+        color: #4CAF50;
+        text-decoration: none;
+      }
+      
+      .forgot-password a:hover {
+        text-decoration: underline;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <form action="" method="post">
+      <label for="username">Tên đăng nhập:</label>
+      <input type="text" id="username" name="username" required>  
+      <label for="password">Mật khẩu:</label>
+      <input type="password" id="password" name="password" required>
+      {% if error %}
+    <p style="color: red;">{{ error }}</p> 
+{% endif %}
+      <input type="submit" value="Đăng nhập">
+      <div class="forgot-password">
+        <a href="forgot_password.php">Quên mật khẩu?</a>
+      </div>
+    </form>
+  </body>
+</html>
