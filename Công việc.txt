@@ -1,0 +1,14 @@
+Call API đến ChatGPT 							[OK]
+Trả API về cho người dùng						[OK]
+Chức năng đăng nhập, xác thực 						[OK]
+Lưu trữ câu hỏi								[OK]
+Gửi câu hỏi từ người dùng đến ChatGPT					[Cần tài khoản đăng ký]
+Kiểm tra mức độ VIP của tài khoản, nếu chưa, giới hạn số câu hỏi	[OK]
+Xác thực thanh toán							[Demo] /Thanh toán thành công VIP: 0 - 1
+kiểm tra thời hạn VIP tài khoản						[OK]
+Hỗ trợ admin quản lý người dùng( Xem câu hỏi)				[OK]
+Tạo ràng buộc cho các bảng						[OK]
+Mã hóa mật khẩu đăng nhập						[OK]
+Thêm phần Policy							[OK]
+Cảm ơn trước khi đăng xuất						[OK]
+

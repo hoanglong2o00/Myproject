@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+   </head>
+   <body ng-app="ungdungdautien">
+      <div ng-controller="ViduController" >
+         <h2>Chao mung ban den voi {{xinchao.tieude}} tai VietJack.com!</h2>
+      </div>
+      <script>
+         angular.module("ungdungdautien", [])
+         .controller("ViduController", function($scope) {
+            $scope.xinchao = {};
+            $scope.xinchao.tieude = "AngularJS";
+         });
+      </script>
+   </body>
+</html>
